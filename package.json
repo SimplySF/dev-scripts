@@ -2,7 +2,7 @@
   "name": "@simplysf/dev-scripts",
   "version": "1.0.0",
   "description": "Standardize package.json scripts and config files for @simplysf projects.",
-  "repository": "@simplysf/dev-scripts",
+  "repository": "simplysf/dev-scripts",
   "bin": {
     "sf-clean": "bin/sf-clean.js",
     "sf-docs": "bin/sf-docs.js",
