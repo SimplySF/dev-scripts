@@ -1,5 +1,5 @@
 {
-  "title": "JSON schema for .sfdevrc.json config for @salesforce/dev-scripts",
+  "title": "JSON schema for .sfdevrc.json config for @simplysf/dev-scripts",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "additionalProperties": false,

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020, salesforce.com, inc.
+ * Copyright (c) 2024, Clay Chipps; Copyright (c) 2024, Salesforce.com, Inc.
  * All rights reserved.
  * Licensed under the BSD 3-Clause license.
  * For full license text, see LICENSE.txt file in the repo root or https://opensource.org/licenses/BSD-3-Clause
@@ -63,7 +63,7 @@ function writeLicenseFile(targetDir) {
   const licenseTargetPath = join(targetDir, FILE_NAME_LICENSE);
 
   const license = readFileSync(licenseSourcePath, 'utf-8');
-  const licenseWithYear = license.replace('REPLACE_YEAR', new Date().getFullYear());
+  const licenseWithYear = license.replaceAll('REPLACE_YEAR', new Date().getFullYear());
 
   // Hacky: create a tmp file to copy from to utilize existing checks and logging in copyFile()
   writeFileSync(licenseSourceTmpPath, licenseWithYear);
@@ -81,7 +81,8 @@ function writeGitignore(targetDir) {
   if (!copied) {
     const isAPlugin = isPlugin(targetDir);
     const relevantPatterns = IGNORES.filter((entry) => !entry.plugin || (entry.plugin && isAPlugin));
-    let original = readFileSync(gitignoreTargetPath, 'utf-8');
+    // eslint-disable-next-line no-control-regex
+    let original = readFileSync(gitignoreTargetPath, 'utf-8').replace(new RegExp('\r\n', 'g'), '\n');
 
     const segments = original
       // Segments are defined by "# --" in the gitignore
