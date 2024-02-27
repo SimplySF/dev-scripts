@@ -1,4 +1,13 @@
-# 2.0.0 (2024-02-24)
+# [2.1.0](https://github.com/simplysf/dev-scripts/compare/2.0.0...2.1.0) (2024-02-27)
+
+
+### Features
+
+* add eslint plugin header ([de59997](https://github.com/simplysf/dev-scripts/commit/de59997da9743ebb9e8930a5a5759eb6e45ee68f))
+
+
+
+# [2.0.0](https://github.com/simplysf/dev-scripts/compare/d2b38c32ebadd9a3b02fc1110e50271062d8dc97...2.0.0) (2024-02-24)
 
 
 ### Bug Fixes
