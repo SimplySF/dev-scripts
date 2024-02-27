@@ -44,6 +44,7 @@
     "chalk": "^4.0.0",
     "cosmiconfig": "^7.1.0",
     "eslint-config-salesforce-typescript": "^3.2.11",
+    "eslint-plugin-header": "^3.1.1",
     "husky": "^7.0.4",
     "linkinator": "^6.0.4",
     "mocha": "^10.3.0",
