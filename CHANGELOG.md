@@ -1,3 +1,12 @@
+## [2.1.2](https://github.com/simplysf/dev-scripts/compare/2.1.1...2.1.2) (2024-02-28)
+
+
+### Bug Fixes
+
+* add --ignore-signing-artifacts flag to sf-clean ([#304](https://github.com/simplysf/dev-scripts/issues/304)) ([2e6a9ba](https://github.com/simplysf/dev-scripts/commit/2e6a9ba0878bfd50c7fa5836761bb0f373b87c3e))
+
+
+
 ## [2.1.1](https://github.com/simplysf/dev-scripts/compare/2.1.0...2.1.1) (2024-02-28)
 
 
