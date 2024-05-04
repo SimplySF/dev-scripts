@@ -1,3 +1,12 @@
+# [3.1.0](https://github.com/simplysf/dev-scripts/compare/3.0.0...3.1.0) (2024-05-04)
+
+
+### Features
+
+* update gitignore ([6a1803d](https://github.com/simplysf/dev-scripts/commit/6a1803dc7c3a0c5392c62d7e1149afc552308744))
+
+
+
 # [3.0.0](https://github.com/simplysf/dev-scripts/compare/2.1.2...3.0.0) (2024-05-04)
 
 
