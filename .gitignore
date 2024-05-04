@@ -10,6 +10,9 @@ package-lock.json
 npm-error.log
 yarn-error.log
 
+# history extension
+.history
+
 # compile source
 lib
 
