@@ -1,3 +1,18 @@
+# [3.2.0](https://github.com/simplysf/dev-scripts/compare/3.1.0...3.2.0) (2024-05-19)
+
+
+### Bug Fixes
+
+* publish plugin lists ([0569fe8](https://github.com/simplysf/dev-scripts/commit/0569fe8275c21276f29f4b8e6163db41bcea23ba))
+* update plugin lists ([1516196](https://github.com/simplysf/dev-scripts/commit/1516196c69605c1aad331040dd872e13c27cd849))
+
+
+### Features
+
+* only generate lockfiles for jit plugins ([#325](https://github.com/simplysf/dev-scripts/issues/325)) ([462e6fa](https://github.com/simplysf/dev-scripts/commit/462e6fa79dedb6d86e644a1e95d8fd32512aa34f))
+
+
+
 # [3.1.0](https://github.com/simplysf/dev-scripts/compare/3.0.0...3.1.0) (2024-05-04)
 
 
