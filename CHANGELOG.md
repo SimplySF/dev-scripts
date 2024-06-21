@@ -1,3 +1,22 @@
+# [3.3.0](https://github.com/simplysf/dev-scripts/compare/3.2.0...3.3.0) (2024-06-21)
+
+
+### Bug Fixes
+
+* bump cmd-ref ([#341](https://github.com/simplysf/dev-scripts/issues/341)) ([fa97b57](https://github.com/simplysf/dev-scripts/commit/fa97b571b8444221110dbe6fabe45c0ea9bc60c0))
+* no prettier on messages ([f4ead06](https://github.com/simplysf/dev-scripts/commit/f4ead06a2c0045b932080e932a315fc389909fcf))
+* normalize line endings ([871461a](https://github.com/simplysf/dev-scripts/commit/871461a515813fdbfc9c9f175c7d10aaf507a0ee))
+* respect current line ending in file ([473c075](https://github.com/simplysf/dev-scripts/commit/473c0754d6f3528d11189a816362394292ee521d))
+* sf-clean too ([9200779](https://github.com/simplysf/dev-scripts/commit/9200779a914a39a001b2f50b1441fd208795cdae))
+
+
+### Features
+
+* bump to new major version of sf-plugins-core ([#339](https://github.com/simplysf/dev-scripts/issues/339)) ([aee2513](https://github.com/simplysf/dev-scripts/commit/aee2513b83d805d57e8a1283e453d26e113994d4))
+* enforce core v4 ([#331](https://github.com/simplysf/dev-scripts/issues/331)) ([11ede94](https://github.com/simplysf/dev-scripts/commit/11ede947a41766c61491fe5016afdd2b71bf3bd6))
+
+
+
 # [3.2.0](https://github.com/simplysf/dev-scripts/compare/3.1.0...3.2.0) (2024-05-19)
 
 
