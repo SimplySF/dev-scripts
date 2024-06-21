@@ -84,11 +84,20 @@ function writeGitignore(targetDir) {
     // eslint-disable-next-line no-control-regex
     let original = readFileSync(gitignoreTargetPath, 'utf-8').replace(new RegExp('\r\n', 'g'), '\n');
 
+    // respect the file EOL (`CRLF` or `LF`).
+    //
+    // we can't use node's `os.EOL` because that assumes:
+    //   * unix only uses `CL`
+    //   * win only uses `CRLF`
+    //
+    // when all 4 scenarios are completely valid
+    const originalEOL = original.includes('\r\n') ? '\r\n' : '\n';
+
     const segments = original
       // Segments are defined by "# --" in the gitignore
       .split('# --')
       // Turn each segment into list of valid gitignore lines
-      .map((segment) => segment.split('\n'))
+      .map((segment) => segment.split(originalEOL))
       // Maps segment name to list of valid gitignore lines
       .reduce((map, segment) => {
         const segmentName = (segment.shift() || '').trim();
@@ -113,7 +122,7 @@ function writeGitignore(targetDir) {
       }
 
       if (needsWrite) {
-        writeFileSync(gitignoreTargetPath, `${original}\n${toAdd.join('\n')}`);
+        writeFileSync(gitignoreTargetPath, `${original}${originalEOL}${toAdd.join(originalEOL)}`);
         return gitignoreTargetPath;
       }
     } else {
@@ -136,11 +145,11 @@ function writeGitignore(targetDir) {
         for (const [section, lines] of Object.entries(updatedSegments)) {
           if (lines.length === 0) continue;
           original = original.replace(
-            `# -- ${section}\n${segments[section].join('\n')}`,
-            `# -- ${section}\n${[...segments[section], ...lines, '\n'].join('\n')}`
+            `# -- ${section}${originalEOL}${segments[section].join(originalEOL)}`,
+            `# -- ${section}${originalEOL}${[...segments[section], ...lines, originalEOL].join(originalEOL)}`
           );
         }
-        writeFileSync(gitignoreTargetPath, original.trimEnd() + '\n');
+        writeFileSync(gitignoreTargetPath, original.trimEnd() + originalEOL);
         return gitignoreTargetPath;
       }
     }
