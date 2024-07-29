@@ -42,7 +42,7 @@
     "@types/mocha": "^10.0.6",
     "@types/node": "^18.19.39",
     "@types/sinon": "^10.0.20",
-    "chai": "^4.4.1",
+    "chai": "^4.5.0",
     "chalk": "^4.0.0",
     "cosmiconfig": "^8.3.6",
     "eslint-config-salesforce-typescript": "^3.3.1",
