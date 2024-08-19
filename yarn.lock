@@ -4190,10 +4190,10 @@ typedoc-plugin-missing-exports@0.23.0:
   resolved "https://registry.npmjs.org/typedoc-plugin-missing-exports/-/typedoc-plugin-missing-exports-0.23.0.tgz#076df6ffce4d84e8097be009b7c62a17d58477a5"
   integrity sha512-9smahDSsFRno9ZwoEshQDuIYMHWGB1E6LUud5qMxR2wNZ0T4DlZz0QjoK3HzXtX34mUpTH0dYtt7NQUK4D6B6Q==
 
-typedoc@^0.26.3:
-  version "0.26.3"
-  resolved "https://registry.npmjs.org/typedoc/-/typedoc-0.26.3.tgz#723b2c4ca5dd1d9baf43d6a5a1f4d640ba4207a8"
-  integrity sha512-6d2Sw9disvvpdk4K7VNjKr5/3hzijtfQVHRthhDqJgnhMHy1wQz4yPMJVKXElvnZhFr0nkzo+GzjXDTRV5yLpg==
+typedoc@^0.26.6:
+  version "0.26.6"
+  resolved "https://registry.npmjs.org/typedoc/-/typedoc-0.26.6.tgz#9cb3d6f0ed5070f86af169c3f88ca2c9b7031f59"
+  integrity sha512-SfEU3SH3wHNaxhFPjaZE2kNl/NFtLNW5c1oHsg7mti7GjmUj1Roq6osBQeMd+F4kL0BoRBBr8gQAuqBlfFu8LA==
   dependencies:
     lunr "^2.3.9"
     markdown-it "^14.1.0"
