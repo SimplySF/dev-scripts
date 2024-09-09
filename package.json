@@ -60,7 +60,7 @@
     "typedoc": "^0.26.3",
     "typedoc-plugin-missing-exports": "0.23.0",
     "typescript": "^5.4.3",
-    "wireit": "^0.14.4"
+    "wireit": "^0.14.9"
   },
   "publishConfig": {
     "access": "public"
