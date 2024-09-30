@@ -1,3 +1,19 @@
+## [3.3.1](https://github.com/simplysf/dev-scripts/compare/3.3.0...3.3.1) (2024-09-30)
+
+
+### Bug Fixes
+
+* bump dev-config ([#353](https://github.com/simplysf/dev-scripts/issues/353)) ([42b2941](https://github.com/simplysf/dev-scripts/commit/42b2941dc9e6214203684e0ed37e47ad89fefb81))
+* **deps:** bump braces from 3.0.2 to 3.0.3 ([#334](https://github.com/simplysf/dev-scripts/issues/334)) ([5a098f2](https://github.com/simplysf/dev-scripts/commit/5a098f2f591228717c31b8791755b82fb359d48c))
+* **deps:** bump mocha and @types/mocha ([#352](https://github.com/simplysf/dev-scripts/issues/352)) ([ae5f610](https://github.com/simplysf/dev-scripts/commit/ae5f610bd81bc00e34914772f2fcdd7a5c1c4bc9))
+* **deps:** bump-nyc-and-eslint-config ([#360](https://github.com/simplysf/dev-scripts/issues/360)) ([2c81ff3](https://github.com/simplysf/dev-scripts/commit/2c81ff373384ebc1c7e2418c6145aaf6dcdf3ad2))
+* **deps:** typedoc plugin for v0.26 support ([#355](https://github.com/simplysf/dev-scripts/issues/355)) ([18f109f](https://github.com/simplysf/dev-scripts/commit/18f109f69f4c01e12abde10a9e1128e5ffb1fdbf))
+* dev-config bump for typedoc options update ([#354](https://github.com/simplysf/dev-scripts/issues/354)) ([cac2ee7](https://github.com/simplysf/dev-scripts/commit/cac2ee726abca4af50ec8f6637049a5a2c51bb84))
+* raise deps ([#356](https://github.com/simplysf/dev-scripts/issues/356)) ([6203ee2](https://github.com/simplysf/dev-scripts/commit/6203ee223318f2b06873b9dedc3cfbf4c8626a90))
+* update plugin lists ([2dbe955](https://github.com/simplysf/dev-scripts/commit/2dbe955b0d201b74b5f85cbcb49e1f89be24228c))
+
+
+
 # [3.3.0](https://github.com/simplysf/dev-scripts/compare/3.2.0...3.3.0) (2024-06-21)
 
 
