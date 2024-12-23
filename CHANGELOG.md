@@ -1,3 +1,12 @@
+## [3.3.2](https://github.com/simplysf/dev-scripts/compare/3.3.1...3.3.2) (2024-12-23)
+
+
+### Bug Fixes
+
+* update plugin lists ([9fbe7fb](https://github.com/simplysf/dev-scripts/commit/9fbe7fbe53351b70ed83dfbcf9fd5906de7f9cdb))
+
+
+
 ## [3.3.1](https://github.com/simplysf/dev-scripts/compare/3.3.0...3.3.1) (2024-09-30)
 
 
