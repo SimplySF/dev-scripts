@@ -51,7 +51,7 @@ const PACKAGE_DEFAULTS = {
     'link-check': {
       command:
         // eslint-disable-next-line max-len
-        'node -e "process.exit(process.env.CI ? 0 : 1)" || linkinator "**/*.md" --skip "CHANGELOG.md|node_modules|test/|confluence.internal.salesforce.com|my.salesforce.com|%s" --markdown --retry --directory-listing --verbosity error',
+        'node -e "process.exit(process.env.CI ? 0 : 1)" || linkinator "**/*.md" --skip "CHANGELOG.md|node_modules|test/|confluence.internal.salesforce.com|my.salesforce.com|localhost|%s" --markdown --retry --directory-listing --verbosity error',
       files: ['./*.md', './!(CHANGELOG).md', 'messages/**/*.md'],
       output: [],
     },
@@ -80,6 +80,7 @@ const PACKAGE_DEFAULTS = {
 // Path to resolved config object.
 const resolvedConfigs = {};
 
+// eslint-disable-next-line complexity
 const resolveConfig = (path) => {
   if (path && resolvedConfigs[path]) {
     return resolvedConfigs[path];
@@ -145,6 +146,11 @@ const resolveConfig = (path) => {
 
   if (configFromFile.test?.testsPath) {
     defaults.wireit['test:only'].command = `nyc mocha "${configFromFile.test.testsPath}"`;
+  }
+
+  // If a custom license exists in the config file, don't add the fix-license script
+  if (!configFromFile.license) {
+    defaults.scripts['fix-license'] = 'eslint src test --fix --rule "header/header: [2]"';
   }
 
   // Allow users to override certain scripts
