@@ -1,3 +1,13 @@
+## [3.3.3](https://github.com/simplysf/dev-scripts/compare/3.3.2...3.3.3) (2025-08-03)
+
+
+### Bug Fixes
+
+* bump wireit for new cache ([5c41ed8](https://github.com/simplysf/dev-scripts/commit/5c41ed868de17d6aae6d0b83982052c4cdb45a78))
+* major bump failed ([149eb1e](https://github.com/simplysf/dev-scripts/commit/149eb1ee73b63cc4a12cc2ae43868da37c254818))
+
+
+
 ## [3.3.2](https://github.com/simplysf/dev-scripts/compare/3.3.1...3.3.2) (2024-12-23)
 
 
